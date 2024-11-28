@@ -1,0 +1,71 @@
+/* Importar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', Arial, sans-serif; /* Fuente manuscrita */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9; /* Color de fondo beige */
+    overflow-x: hidden; 
+}
+
+/* Estilo rústico para el contenedor de la carta */
+.carta {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffdf5; /* Color de fondo tipo papel envejecido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d4c2a5; /* Borde marrón suave */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow-wrap: break-word; /* Evita el desbordamiento de palabras largas */
+    box-sizing: border-box; 
+}
+
+/* Estilo del encabezado */
+h1 {
+    font-size: 2em;
+    color: #5b3921; /* Marrón oscuro */
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4a3b2e; /* Marrón suave */
+    margin-bottom: 12px;
+    text-align: justify;
+    text-indent: 20px; /* Sangría al inicio */
+}
+
+/* Estilo de la firma */
+.firma {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5b3921;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos para dispositivos pequeños */
+@media (max-width: 480px) {
+    .carta {
+        width: 95%; /* Asegura más espacio en pantallas pequeñas */
+        margin: 10px auto; /* Reduce el margen */
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .firma {
+        font-size: 1.2em;
+    }
+}

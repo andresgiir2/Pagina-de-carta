@@ -1,0 +1,134 @@
+/* Importar la fuente manuscrita */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* Estilo base */
+body {
+    font-family: 'Patrick Hand', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9; /* Fondo beige */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+/* Contenedor principal del login */
+.login-container {
+    background-color: #fffdf5; /* Fondo tipo papel */
+    border: 2px solid #d4c2a5; /* Borde marrón suave */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo en pantallas grandes */
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #5b3921; /* Marrón oscuro */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Párrafos */
+p {
+    color: #4a3b2e; /* Marrón suave */
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    color: #5b3921;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Campo de contraseña */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="password"],
+input[type="text"]  {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #d4c2a5; /* Borde marrón suave */
+    border-radius: 8px;
+    background-color: #fffdf5; /* Fondo papel */
+    color: #5b3921;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícono de ojo */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #5b3921;
+    font-size: 1.2em;
+}
+
+.eye-icon:hover {
+    color: #b89c80; /* Marrón más claro */
+}
+
+/* Botón de envío */
+button {
+    background-color: #d4c2a5; /* Marrón claro */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b89c80; /* Marrón más oscuro */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    input[type="password"] {
+        font-size: 1em;
+    }
+}
